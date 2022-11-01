@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Roboto', sans-serif;;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&family=Roboto&display=swap');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/**Navigation**/
+a:hover{
+  text-decoration: underline;
+}
+header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  padding: 10px 10px;
+  
+}
+.mini-logo{
+  height: 20px; 
+}
+.nav_side{
+  margin:0px;
+}
+nav{
+  margin-right: auto;
+  margin-left: 5px;
+}
+nav > *{
+  display: inline-block;
+  padding: 0px 10px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+.searchbox{
+  width: 300px;
+  height: 50px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.searchbox > input{
+  flex: 1;
+  height: 20px;
+  border-radius:10px ;
+  font-size: 10px;
+  padding-left: 20px;
+  
+}
+.searchbox > i{
+  position:absolute;
+  padding-left: 6px;
+  padding-top: 1px;
+  height: 14px;
+  font-size: 13px;
+  text-align: center;
+
+}
+
+
+.fa-sharp{
+  margin: 0 10px;
+}
+/**about main-text**/
+.about-us-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 600px;
+}
+
+.rd-logo {
+  max-width: 274px;
+  margin: 28px 60px 38px;
+}
+.about-rainydays{
+  width: 430px;
+  text-align: justify;
+}
+.about-rainydays > p{
+  margin: 20px;
+}
+/**about main-image**/
+
+.about-images{
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  grid-template-rows: repeat(2,0fr);
+  gap: .5em;
+  margin-right: 35px;
+
+}
+
+.redjacket, .leatherjacket{
+  padding: 2px;
+  width: 300px;
+  height: 350px;
+}
+
+.rainjacket, .winterjackets{
+  height: 200px;
+  width: 300px;
+}
+.rainjacket{
+  grid-column: 2;
+  grid-row:1;
+}
+
+.redjacket{
+  grid-column: 1;
+  grid-row:1/3;
+}
+
+.leatherjacket{
+  grid-column: 2;
+  grid-row:2/3;
+}
+
+.winterjackets{
+  grid-column: 1;
+  grid-row:2;
+  align-self: end;
+}
+
+
