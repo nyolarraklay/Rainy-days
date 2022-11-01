@@ -11,67 +11,95 @@
 </head>
 <body>
   <header>
-    <div class="nav-side">
-      <a href="index.html"><img class="mini-logo" src="Images/mountain logo.jpg" alt="a picture of a mountain"> </a>
-    </div>
-      <nav class="nav-side0">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="products.html">Products</a>    
-      </nav>
-   
-    <div class="searchbox">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" placeholder="Search">      
-    </div>
-    <div class="nav-side2">
-      <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-    </div>
-   
+    <section class="nav-container">
+      <div class="nav-container-part1">
+        <div class="nav-image">
+          <a href="index.html"><img class="mini-logo" src="Images/mountain logo.jpg" alt="a picture of a mountain"> </a>
+        </div>
+        <div class="nav-link">
+          <nav class="nav-side0">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>    
+          </nav>
+        </div> 
+      </div>  
+      <div class="nav-container-part2">
+        <div class="nav-searchbox">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search">      
+        </div>
+        <div class="nav-cart">
+          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </section> 
   </header>
   <main>
-    <div class="about-us-container">
-      <img src="Images/rainy days logo.jpg" alt="Rainy days logo" class="rd-logo">
-    <section class="about-rainydays">
-      <p>Rainydays is built on comfort of our customers and make them push to their zone. Our brands are designed for a range of different outdoor activities that enriches people's lives.</p>
-      <p>The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.</p>
-    </section>
-    <section class="about-images">
-      <img src="Images/jackets/photo-1481174228429-b2c3f5680a7a.avif"alt="red autumn jacket" class="redjacket">
-      <img src="Images/jackets/istockphoto-905996500-612x612.jpg" alt="rain jacket" class="rainjacket">
-      <img src="Images/jackets/orange jacket.webp" alt="winter jackets" class="winterjackets">
-      <img src="Images/jackets/photo-1521223890158-f9f7c3d5d504.avif" alt="leather jacket" class="leatherjacket">
-    </section>
-    </div>
+   
+      <div class="about-us-container-content">
+        <section class="about-rainydays">
+          <div class="center-logo">
+            <img src="Images/rainy days logo.jpg" alt="Rainy days logo" class="rd-logo">
+          </div>
+          <div class="center-description">
+            <p>Rainydays is built on comfort of our customers and make them push to their zone. Our brands are designed for a range of different outdoor activities that enriches people's lives.</p>
+            <p>The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.</p>  
+          </div>
+        </section>
+        <section class="about-images">
+          <img src="Images/jackets/photo-1481174228429-b2c3f5680a7a.avif"alt="red autumn jacket" class="redjacket">
+          <img src="Images/jackets/istockphoto-905996500-612x612.jpg" alt="rain jacket" class="rainjacket">
+          <img src="Images/jackets/orange jacket.webp" alt="winter jackets" class="winterjackets">
+          <img src="Images/jackets/photo-1521223890158-f9f7c3d5d504.avif" alt="leather jacket" class="leatherjacket">
+        </section>
+      </div>
+   
 
     <section class="message-us">
-      <h1>Stay Connected</h1>
-      <p>Get behind the scenes access to campaigns, new products and sales</p>
-      <input type="email" name="email" id="email">
-      <label for="email">Email</label>
-      <button>Submit</button>
-      <p>By signing up you are agreeing marketing communication from us. For more information please see our Privacy Policy</p>
+      <div class="message-us-container">
+        <div class="box-1">
+          <h1>Stay Connected</h1>
+          <p>Get behind the scenes access to campaigns, new products and sales</p>
+        </div>
+        <div class="box-2">
+          <input type="email" placeholder="Email">
+          <button>Submit</button>
+          <p>By signing up you are agreeing marketing communication from us. For more information please see our Privacy Policy</p>
+        </div>
+      </div>
+      
     </section>
     <section class="social-media">
-      <h3>Customer Service</h3>
-      <p>Contack Us</p>
-      <p>Newsletter</p>
-      <h3>Online SHopping</h3>
-      <p>Shopping cart</p>
-      <p>our product</p>
-      <h3>Information</h3>
-      <p>Store Address</p>
-      <p>Store Hours</p>
-      <p>Payment options</p>
-      <h3>Follow Us on Social Media</h3>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-pinterest-p"></i>
-
-
+      <div class="social-media-container">
+        <div class="SM-box1">
+          <h3>Customer Service</h3>
+          <p>Contack Us</p>
+          <p>Newsletter</p>
+        </div>
+        <div class="SM-box2">
+          <h3>Online Shopping</h3>
+          <p>Shopping cart</p>
+          <p>our product</p>
+        </div>
+        <div class="SM-box3">
+          <h3>Information</h3>
+          <p onclick="window.location.href='contact.html';">Store Address</p>
+          <p onclick="window.location.href='contact.html';">Store Hours</p>
+          <p onclick="window.location.href='contact.html';">Payment options</p>
+        </div>
+        <div class="SM-box4">
+          <h3>Follow Us on Social Media</h3>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+      </div>
     </section>
   </main>
-  
+  <footer>
+    <p>&copy; RAINY DAYS 2022</p>
+  </footer>
 </body>
 </html>
