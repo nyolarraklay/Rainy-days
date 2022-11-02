@@ -16,24 +16,31 @@
 a:hover{
   text-decoration: underline;
 }
-.mini-logo{
-  height: 20px; 
+header{
+  background: rgb(10, 54, 65 );
+  color: white;
+  position: static;
 }
+
 .nav-container{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 35px;
   align-items: center;
-  margin: 5px;
 }
-.nav-container-part1{
-  display: flex;
-  gap: 20px;
+nav{
+  display: block;
+  position: static;
 }
-.nav-link a{
+.menu-icon, #menu-checkbox{
+  display: none;
+}
+nav a{
+  display: inline-block;
   text-decoration: none;
   padding: 5px;
+  color: white;
 }
 .nav-container-part2{
   display: flex;
@@ -41,7 +48,6 @@ a:hover{
   align-items: center;
 }
 .nav-searchbox{
-  background-color: white;
   border-radius: 10px;
   align-items: center;
   position: relative;
@@ -60,6 +66,7 @@ a:hover{
   padding-top: 6px;
   font-size: 13px;
   text-align: center;
+  color: black;
 
 }
 
@@ -78,7 +85,7 @@ a:hover{
 
 .rd-logo {
   max-width: 380px;
-  margin: 28px 60px 38px;
+  margin: 15px 60px 38px;
 }
 .about-rainydays{
   width: 400px;
@@ -155,10 +162,10 @@ a:hover{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 265px;
+  width: 300px;
 }
 .box-2 p{
-  width: 200px;
+  width: 300px;
   font-size: 10px;
   margin-left: 2px;
 }
@@ -167,7 +174,7 @@ a:hover{
   width: 200px;
 }
 .box-2 button{
-  padding: 0px 11px;
+  margin: 0px;
   background-color: rgb(10, 54, 65 );
   color: white;
   border: 0px;
@@ -176,6 +183,8 @@ a:hover{
 }
 .SM-box3{
 cursor: pointer;
+display: flex;
+flex-direction: column;
 }
 
 .social-media-container{
@@ -189,9 +198,11 @@ cursor: pointer;
   font-size: 15px;
 }
 
-.social-media-container p{
+.social-media-container a, .social-media p{
   font-size: 12px;
   padding: 1px;
+  text-decoration: none;
+  color: black;
 }
 footer{
   background-color:  rgb(10, 54, 65 );
@@ -240,11 +251,13 @@ footer{
 .cta, .selection button, .contact-top button{
   background-color: rgb(10, 54, 65 );
   border-radius: 10px;
+  margin-top: 10px;
   padding: 5px 10px;
   color: white;
   width: 100px;
   font-size: 12px;
   text-align: center;
+  text-decoration: none;
 }
 select{
   background-color: grey;
@@ -267,7 +280,7 @@ select{
 }
 .categories-container img{
   height: 220px;
-  width: 300px;
+  width: 275px;
 }
 .categories-container p{
   text-transform:uppercase;
@@ -409,7 +422,7 @@ a:hover{
 /**contact page**/
 .contact-top{
   background-image: url("../Images/jackets/istockphoto-905996500-612x612.jpg");
-  padding: 140px 0px;
+  padding: 115px 0px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -422,10 +435,13 @@ a:hover{
   margin-left: 10px;
 }
 
-.contact-top button{
-  width: 400px;
+.contact-top h2{
+  width: 250px;
   font-size: 30px;
-  padding: 5px 10px;
+  padding: 5px 5px;
+  border-radius: 5%;
+  background: rgba(10, 54, 65, 0.432);
+  color: white;
 }
 .contact-top h1{
   font-size: 80px;
@@ -464,4 +480,169 @@ a:hover{
   height: 40px;
   width: 50px;
   margin-left: 5px;
+}
+
+@media (min-width: 370px) and (max-width: 1100px){
+  
+  /**navigation**/
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav{
+    display: block;
+  }
+
+  .nav-container{
+    position: relative;
+  }
+
+  nav {
+    position: absolute;
+    background: rgb(10, 54, 65 );
+    left:0px;
+  }
+
+  nav a {
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .menu-icon{
+    display: inline;
+  }
+
+  /** horizontal scroll **/
+  .top-product .categories-circle, .categories-container{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 31%;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+  .categories-container{
+    grid-auto-columns: 65%; 
+  }
+  .categories-container img{
+    width: 90%;
+    height: 160px;
+  }
+
+  /**home page**/
+.top-section{
+  margin-bottom: 0px;
+}
+
+.top-section-text{
+  width: 135px;
+  height: 150px;
+  backdrop-filter: blur(3px);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-section-text{
+  width: 350px;
+  height: 150px;
+  backdrop-filter: blur(3px);
+  color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  background: #00000017;
+}
+
+
+.bonus-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bonus-section div,
+.social-media-container{
+  min-width: 370px;
+  max-width: 600px;
+  width: 370px;
+}
+
+/**about page**/
+.about-images{
+  display: none;
+}
+.rd-logo{
+  margin: 1px 0px;
+}
+
+/**contact page**/
+.contact-top{
+  background-image: url(../Images/jackets/istockphoto-905996500-612x612\ -\ small.jpg);
+  background-position: center;
+  padding: 50px 0px;
+}
+
+.contact-top 
+
+/**bottom section**/
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  margin: 5px 5px;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 20px;
+}
+.box-2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ .box-2 input{
+  width: 182px;
+}
+.box-2 button{
+  margin: 3px 0px;
+  width: 60px;
+}
+.contact-top div{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-top h1{
+  font-size: 30px;
+}
+.contact-top h2{
+  font-size: 20px;
+  width: 152px;
+}
+.contact-top a{
+  position: unset;
+  top: 130px;
+  font-size: 11px;  
+  -webkit-text-stroke: 0px white;
+  color: white;
+}
+.contact-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-bottom div{
+  margin-bottom: 20px;
+}
+.address-map img{
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+}
 }
