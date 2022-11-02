@@ -187,18 +187,18 @@ display: flex;
 flex-direction: column;
 }
 
-.social-media-container{
+.social-media{
   display: flex;
   flex-direction: row;
   height: 75px;
   justify-content: space-between;
   margin: 5px 10px;
 }
-.social-media-container h3{
+.social-media h3{
   font-size: 15px;
 }
 
-.social-media-container a, .social-media p{
+.social-media a, .social-media p{
   font-size: 12px;
   padding: 1px;
   text-decoration: none;
@@ -563,15 +563,8 @@ a:hover{
 .bonus-section{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-}
-
-.bonus-section div,
-.social-media-container{
-  min-width: 370px;
-  max-width: 600px;
-  width: 370px;
 }
 
 /**about page**/
@@ -586,20 +579,23 @@ a:hover{
 .contact-top{
   background-image: url(../Images/jackets/istockphoto-905996500-612x612\ -\ small.jpg);
   background-position: center;
-  padding: 50px 0px;
+  padding: 120px 0px;
 }
 
-.contact-top 
-
 /**bottom section**/
-.social-media-container {
+.social-media div{
+ margin-left: 20px;
+}
+.social-media {
   display: flex;
   flex-direction: row;
   height: 90px;
+  
   margin: 5px 5px;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  gap: 20px;
+  gap: 30px;
+}
+.message-us{
+  width: auto;
 }
 .box-2{
   display: flex;
@@ -612,6 +608,9 @@ a:hover{
 .box-2 button{
   margin: 3px 0px;
   width: 60px;
+}
+.box-2 p{
+  width: auto;
 }
 .contact-top div{
   display: flex;
