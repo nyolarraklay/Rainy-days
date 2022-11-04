@@ -417,13 +417,12 @@ span{
   text-decoration: none;
 }
 .winter-jacket{
-  background-image: url("../Images/jackets/WINTER\ RED.webp");
+  background-image: url("../images/jackets/WINTER\ RED.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-bottom: 15px;
-  padding-top: 230px;
-  padding-bottom: 230px;
+  padding: 250px 0px;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -437,6 +436,12 @@ span{
   display: flex;
   justify-content: space-evenly;
   text-align: center;
+  margin-bottom: 10px;
+}
+.categories-circle button{
+  color: white;
+  background: rgb(10, 54, 65 );
+  border-radius: 20px;
 }
 .categories-circle div{
   display: flex;
@@ -535,6 +540,7 @@ a:hover{
   height: 40px;
   width: 50px;
   margin-left: 5px;
+  object-fit: contain;
 }
 
 @media (min-width: 370px) and (max-width: 1100px){
