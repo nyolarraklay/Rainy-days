@@ -299,7 +299,7 @@ footer{
 
 /**button**/
 
-.cta, .selection button, .contact-top button{
+.cta, .selection button, .contact-top button, .jacket-button{
   background-color: rgb(10, 54, 65 );
   border-radius: 10px;
   margin-top: 10px;
@@ -406,11 +406,7 @@ select{
 .sale-p, .gender{
   color: red;
 }
-/*
-.see-more-target{
-  display: flex;
-}
-*/
+
 
 /**Product page**/
 
@@ -489,6 +485,10 @@ a:hover{
   text-decoration: underline;
   color: red;
 }
+.product-text > a{
+  text-decoration: none;
+  color: rgb(10, 54, 65 );
+}
 
 /**contact page**/
 
@@ -555,7 +555,71 @@ a:hover{
 .see-more-state{
   display: none;
 }
-@media (min-width: 370px) and (max-width: 1100px){
+
+/**jacket page**/
+
+.link{
+ color: black;
+ font-size: 12px;
+}
+.breadcrumbs2{
+  display: flex;
+  list-style: none;
+}
+.breadcrumbs2 .breadcrumb_item:not(:last-child) * {
+  text-decoration: underline;
+}
+.breadcrumb_item::after{
+  content: "/";
+}
+.breadcrumb_item:last-child:after{
+  display: none;
+}
+.colors *, .size-men *{
+  margin: 10px;
+  height: 50px;
+  width: 76px;
+  border: 3px solid;
+  text-align: center;
+  padding: 10px;
+  display: inline-block;
+}
+.blue{
+  background-color: blue;
+  color: white;
+}
+.red{
+  background-color: red;
+  color: white;
+}
+.yellow{
+  background-color: yellow;
+  color:black;
+  border: yellow;
+}
+.black{
+  background-color: black;
+  color: white;
+}
+.jacket-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.description-jacket{
+  display: flex;
+  flex-direction: column;
+}
+.headings *, .color-class *{
+  margin-top: 10px;
+}
+.description-paragraph{
+  width: auto;
+  text-align: justify;
+  margin: 20px;
+  font-size: 20px;
+}
+@media (min-width: 370px) and (max-width: 700px){
   
   /**navigation**/
   nav,
@@ -792,5 +856,12 @@ footer{
   margin-left: 5px;
   height: 20px;
 }
+/**jacket page**/
 
+.image-jacket img{
+  width: 350px;
+}
+.jacket-page{
+  flex-direction: column;
+}
 }
