@@ -644,22 +644,24 @@ a:hover{
     display: inline;
   }
 
-  /** horizontal scroll **/
-
-  .categories-container{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   height: 1900px;
-   margin: 20px 0px;
-  }
   .categories-container img{
     height: 350px;
     width: 350px;
   }
 
+  /**product page**/
+
+  .categories-circle{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+
   .categories-circle, .flex, .categories-circle-part2 > span{
     gap: 0px
+  }
+  .categories-circle-part2 > span{
+    width: 350px;
   }
 
   /**home page**/
@@ -822,6 +824,10 @@ footer{
   max-height: 0;
   font-size: 0;
   transition: .25s ease;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 370px;
+  flex-wrap: wrap;
 }
 .see-more-state:checked ~ .categories-circle .see-more-target {
   opacity: 1;
