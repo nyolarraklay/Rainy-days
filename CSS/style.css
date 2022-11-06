@@ -646,15 +646,6 @@ a:hover{
 
   /** horizontal scroll **/
 
-  .top-product .categories-circle,{
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 31%;
-    justify-content: flex-start;
-    overflow-x: auto;
-    overscroll-behavior-inline: contain;
-  }
-  
   .categories-container{
    display: flex;
    flex-direction: column;
@@ -857,6 +848,12 @@ footer{
   margin-left: 5px;
   height: 20px;
 }
+
+.see-more-trigger:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /**jacket page**/
 
 .image-jacket img{
