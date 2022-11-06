@@ -238,7 +238,7 @@ flex-direction: column;
   flex-direction: row;
   height: 75px;
   justify-content: space-between;
-  margin: 5px 10px;
+  margin: 10px 10px 5px;
 }
 .social-media h3{
   font-size: 15px;
@@ -430,24 +430,21 @@ select{
 }
 .categories-circle img{
   height: 110px;
-  width: 110px;
+  width: 109px;
   border-radius: 70%;
 }
-.categories-circle{
+.categories-circle, .flex, .categories-circle-part2 > span{
 display: flex;
+gap: 12px
 }
-.flex {
-  display: flex;
-}
+
 .flex div{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 10px 3px;
 }
-.categories-circle-part2 > span{
-  display: flex;
-}
+
 .categories-circle button{
   color: white;
   background: rgb(10, 54, 65 );
@@ -670,6 +667,10 @@ a:hover{
     width: 350px;
   }
 
+  .categories-circle, .flex, .categories-circle-part2 > span{
+    gap: 0px
+  }
+
   /**home page**/
 
 .top-section{
@@ -863,5 +864,9 @@ footer{
 }
 .jacket-page{
   flex-direction: column;
+}
+
+.social-media{
+  margin: 15px 0px;
 }
 }
