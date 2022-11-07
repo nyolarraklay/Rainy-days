@@ -277,9 +277,8 @@ footer{
 
 .blur{
   width: 350px;
-  height: 270px; 
-  backdrop-filter: blur(3px);  
-  color: white;
+  backdrop-filter: blur(7px);  
+  color: #82f0d3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -592,7 +591,8 @@ a:hover{
 }
 .red{
   background-color: red;
-  color: white;
+  color: black;
+  border: red;
 }
 .yellow{
   background-color: yellow;
@@ -688,10 +688,11 @@ img[class~="categories-images"]{
 }
 .top-section-text h1{
   font-size: 70px;
+  color:rgb(224 12 12) ;
 }
 .blur{
   width: 300px;
-  height: 200px; 
+  min-height: 215px; 
 }
 .bonus-section{
     display: flex;
