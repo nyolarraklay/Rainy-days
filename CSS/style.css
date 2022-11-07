@@ -277,12 +277,13 @@ footer{
 
 .blur{
   width: 350px;
-  backdrop-filter: blur(7px);  
-  color: #82f0d3;
+  /*backdrop-filter: blur(0px);*/  
+  color: #f5f7f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 42%);
 }
 .top-section-text p{
   font-size: 20px;
@@ -290,7 +291,6 @@ footer{
 .top-section-text h1{
   margin: 10px;
   font-size: 100px;
-  -webkit-text-stroke: 1px rgb(10 54 65);
 }
 .top-section-text h2{
   text-align: center;
@@ -687,8 +687,7 @@ img[class~="categories-images"]{
   font-size: 12px;
 }
 .top-section-text h1{
-  font-size: 70px;
-  color:rgb(224 12 12) ;
+  font-size: 70px; 
 }
 .blur{
   width: 300px;
