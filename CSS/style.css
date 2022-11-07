@@ -433,17 +433,11 @@ select{
   width: 109px;
   border-radius: 70%;
 }
-.categories-circle, .flex, .categories-circle-part2 > span{
+.categories-circle{
 display: flex;
 gap: 12px
 }
 
-.flex div{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px 3px;
-}
 
 .categories-circle button{
   color: white;
@@ -653,16 +647,17 @@ a:hover{
 
   .categories-circle{
     display: flex;
-    flex-direction: column;
-    width: 350px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    position: relative;
+    margin-bottom: 10px;
   }
 
-  .categories-circle, .flex, .categories-circle-part2 > span{
-    gap: 0px
-  }
-  .categories-circle-part2 > span{
-    width: 350px;
-  }
+img[class~="categories-images"]{
+  display: none;
+}
+
 
   /**home page**/
 
@@ -813,52 +808,6 @@ footer{
   margin-top: 10px;
 }
 
-/**product categories**/
-.categories-circle{
-  display: flex;
-  width: 370px;
-  flex-wrap: wrap;
-}
-.see-more-target{
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-  align-content: flex-start;
-  justify-content: flex-start;
-  width: 370px;
-  flex-wrap: wrap;
-}
-.see-more-state:checked ~ .categories-circle .see-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-  display: flex;
-  flex-wrap: wrap;
-}
-.see-more-state ~ .see-more-trigger:before {
-  content: 'show more';
-}
-.see-more-state:checked ~ .see-more-trigger:before {
-  content: 'show less';
-}
-.see-more-trigger{
-  display: flex;
-  padding: 0 0.5em;
-  color: white;
-  font-size: 12px;
-  line-height: 2;
-  border-radius: 5px;
-  width: 75px;
-  background: rgb(10, 54, 65 );
-  margin-left: 5px;
-  height: 20px;
-}
-
-.see-more-trigger:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
 
 /**jacket page**/
 
