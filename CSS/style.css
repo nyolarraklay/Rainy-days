@@ -310,14 +310,14 @@ footer{
   text-align: center;
   text-decoration: none;
 }
-select{
-  background-color: grey;
+select {
+  background-color: #8080806b;
   border-radius: 10px;
   padding: 5px 10px;
-  color: white;
+  color: black;
   width: 100px;
   font-size: 12px;
-  text-align: center;
+ 
 }
 
 /**categories-container**/
@@ -326,9 +326,11 @@ select{
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  height: 300px;
+  min-height: 300px;
   align-items: center;
   margin: 60px 0px;
+  flex-wrap: wrap;
+
 }
 .categories-container img{
   height: 300px;
@@ -349,6 +351,8 @@ select{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+  flex: 1 0 300px;
 }
 .categories-container .cta, .top-section .cta, .bottom-section .cta, .bonus-section .cta {
   width: 175px;
@@ -377,6 +381,7 @@ select{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
 }
 .item{
   background-repeat: no-repeat;
@@ -435,7 +440,13 @@ select{
 }
 .categories-circle{
 display: flex;
-gap: 12px
+gap: 12px;
+flex-wrap: wrap;
+justify-content: center;
+}
+.categories-circle div{
+  display:flex ;
+  flex-direction: column;
 }
 
 
@@ -609,6 +620,11 @@ a:hover{
   text-align: justify;
   margin: 20px;
   font-size: 20px;
+}
+
+.jacket-page-main{
+  max-width: 1000px;
+  margin: 0px auto;
 }
 @media (min-width: 370px) and (max-width: 700px){
   
