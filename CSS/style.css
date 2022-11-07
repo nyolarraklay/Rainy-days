@@ -380,7 +380,7 @@ select {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .item{
   background-repeat: no-repeat;
@@ -835,5 +835,7 @@ footer{
 
 .social-media{
   margin: 15px 0px;
+}
+.bonus-section{flex-direction: column;
 }
 }
