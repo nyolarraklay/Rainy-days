@@ -121,7 +121,7 @@ display: block;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin: 30px 0px;
+  margin: 34px 0px;
 }
 .rd-logo {
   max-width: 300px;
@@ -621,8 +621,18 @@ a:hover{
 
 .jacket-page-main{
   max-width: 1000px;
-  margin: 0px auto;
+  margin: 17px auto;
 }
+.contact-main{
+  margin: 15px;
+}
+.colors p:hover, 
+.size-men p:hover{
+  background-color: grey;
+  color: white;
+}
+
+
 @media (min-width: 320px) and (max-width: 700px){
   
   /**navigation**/
@@ -825,7 +835,7 @@ footer{
 /**jacket page**/
 
 .image-jacket img{
-  width: 350px;
+  width: 300px;
 }
 .jacket-page{
   flex-direction: column;
@@ -835,5 +845,8 @@ footer{
   margin: 15px 0px;
 }
 .bonus-section{flex-direction: column;
+}
+.about-us-container-content{
+  margin: 57px 0px;
 }
 }
