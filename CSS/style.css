@@ -43,11 +43,11 @@ nav a{
   display: flex;
   gap: 10px ;
   align-items: center;
+  position: relative;
 }
 .nav-searchbox{
   border-radius: 10px;
   align-items: center;
-  position: relative;
 }
 
 .nav-searchbox > input{
@@ -67,9 +67,8 @@ nav a{
 
 .content{
   position: absolute;
-  top: 10%;
-  left: 86%;
-  transform: translate(-50%, -50%);
+  top: 5px;  
+  left: 0px;
 }
 .cart-icon{
   cursor: pointer;
@@ -81,11 +80,11 @@ nav a{
   display: none;
 }
 .content{
-  visibility: hidden;
-  width: 300px;
+  display: none;
+  width: 170px;
   height: auto;
   background: white;
-  padding: 30px 35px 40px;  
+  padding: 10px;  
   box-sizing: border-box;
   border-radius: 5px;
 }
@@ -103,12 +102,11 @@ nav a{
   color: black;
 }
 #cart-checkbox:checked~.content{
-  opacity: 1;
-  visibility: visible;
+display: block;
 }
 .content > p{
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 /**about main-text**/
@@ -126,7 +124,7 @@ nav a{
   margin: 30px 0px;
 }
 .rd-logo {
-  max-width: 350px;
+  max-width: 300px;
   margin: 15px 60px 38px;
 }
 .about-rainydays{
@@ -189,10 +187,10 @@ button{
   margin-top: 20px;
 }
 .message-us-container{
-  padding: 15px 10px;
+  padding: 10px 5px;
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 1em;
   justify-content: space-between;
   align-items: center;
 }
@@ -284,6 +282,7 @@ footer{
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 42%);
+  padding: 10px;
 }
 .top-section-text p{
   font-size: 20px;
@@ -387,12 +386,11 @@ select {
   background-size: cover;
   background-position: center;
   margin-bottom: 15px;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding: 130px 0px;
   align-items: center;
   display: flex;
   flex-direction: column;
-  width: 350px;
+  min-width: 300px;
 }
 .new{
   background-image: url("../images/jackets/new_arrivals.jpg");
@@ -625,7 +623,7 @@ a:hover{
   max-width: 1000px;
   margin: 0px auto;
 }
-@media (min-width: 370px) and (max-width: 700px){
+@media (min-width: 320px) and (max-width: 700px){
   
   /**navigation**/
   nav,
@@ -654,8 +652,8 @@ a:hover{
   }
 
   .categories-container img{
-    height: 350px;
-    width: 350px;
+    min-height: auto;
+    min-width: 300px;
   }
 
   /**product page**/
@@ -733,7 +731,7 @@ img[class~="categories-images"]{
 }
 .about-page .about-rainydays{
   width: auto;
-  margin: 32px 0px;
+  margin: 15px 0px;
 }
 .about-images{
   display: none;
@@ -753,7 +751,7 @@ img[class~="categories-images"]{
 /**bottom section**/
 
 .social-media div{
- margin-left: 20px;
+ margin-left: 10px;
 }
 .social-media {
   display: flex;
@@ -770,7 +768,7 @@ img[class~="categories-images"]{
   align-items: flex-start;
 }
  .box-2 input{
-  width: 160px;
+  width: 145px;
 }
 .box-2 button{
   margin: 3px 0px;
@@ -812,9 +810,9 @@ img[class~="categories-images"]{
   width: 200px;
 }
 .content{
-  width: 185px;
-  top: 74px;
-  left: 75%;
+  width: 170px;
+  top: 5px;
+  left: 0px;
 }
 .content > p{
   font-size: 15px;
