@@ -777,6 +777,7 @@ img[class~="categories-images"]{
 }
 .message-us-container{
   flex-direction: column;
+  align-items: flex-start;
 }
 .message-us{
   width: auto;
