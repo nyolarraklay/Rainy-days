@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px
 }
 
 
@@ -274,7 +275,7 @@ footer{
 /**blur background**/
 
 .blur{
-  width: 350px;
+  width: 98vw;
   /*backdrop-filter: blur(0px);*/  
   color: #f5f7f6;
   display: flex;
@@ -663,7 +664,7 @@ a:hover{
 
   .categories-container img{
     min-height: auto;
-    min-width: 300px;
+    min-width: 95vw;
   }
 
   /**product page**/
@@ -688,16 +689,16 @@ img[class~="categories-images"]{
   margin-bottom: 0px;
 }
  .home-page h2{
-  font-size: 20px;
+  font-size: 13px;
 }
 .bottom-section p{
-  font-size: 12px;
+  font-size: 10px;
 }
 .top-section-text h1{
   font-size: 70px; 
 }
 .blur{
-  width: 300px;
+  width: 95vw;
   min-height: 215px; 
 }
 .bonus-section{
@@ -763,11 +764,19 @@ img[class~="categories-images"]{
 .social-media div{
  margin-left: 10px;
 }
+.social-media p, .social-media h3, .social-media a, .selection button{
+  letter-spacing: 1px;
+  font-size: 10px;
+}
+
 .social-media {
   display: flex;
   flex-direction: row;
   height: 90px;
   margin: 0px;
+}
+.message-us-container{
+  flex-direction: column;
 }
 .message-us{
   width: auto;
@@ -778,15 +787,23 @@ img[class~="categories-images"]{
   align-items: flex-start;
 }
  .box-2 input{
-  width: 145px;
+  width: 90vw;
 }
 .box-2 button{
   margin: 3px 0px;
-  width: 60px;
+  width: 80px;
+}
+.cta {
+  font-size: 10px;
 }
 .box-2 p{
   width: auto;
+  letter-spacing: 1px;
 }
+.box-1 p {
+  letter-spacing: 1px;
+}
+
 .contact-top div{
   display: flex;
   flex-direction: column;
@@ -826,6 +843,7 @@ img[class~="categories-images"]{
 }
 .content > p{
   font-size: 15px;
+  letter-spacing: 1px; 
 }
 footer{
   margin-top: 10px;
