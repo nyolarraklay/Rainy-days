@@ -2,23 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rainy Days | Home</title>
+    <title>Rainy Days | Product</title>
     <meta
       name="description"
-      content="An online store selling all weather jackets in various size and colors."
+      content="A lot of different choices of jackets are offered in various sizes and colors."
     />
     <script
       src="https://kit.fontawesome.com/50fb4de67d.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="CSS/style.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,800&family=Roboto&display=swap"
     />
-    <!-- Hotjar Tracking Code for rainy days -->
+    <link rel="stylesheet" href="CSS/style.css" />
     <script>
       (function (h, o, t, j, a, r) {
         h.hj =
@@ -59,38 +57,40 @@
             <input type="checkbox" id="cart-checkbox" />
             <label for="cart-checkbox" class="cart-icon">
               <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <span class="cartOrder">0</span>
             </label>
-            <div class="content">
-              <label for="cart-checkbox" id="temp">x</label>
-
-              <p>Your cart is empty. Continue shopping</p>
-            </div>
+        
           </div>
         </div>
       </div>
     </header>
 
-    <main class="home-page">
-      <section class="top-section">
-        <div class="blur top-section-text">
-          <p>Rainy Days</p>
-          <h1>Jackets</h1>
-          <h2>Weatherproof outerwear for every season</h2>
-          <a class="cta" href="products.html">Shop now</a>
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
         </div>
-      </section>
-      <div class="mainSection"></div>
-      <section class="bottom-section">
-        <div class="blur bottom-section-text">
-          <h2>FACE THE GREAT OUTDOORS</h2>
-          <p>
-            Our most iconic designs and best selling jackets suitable for any
-            outdoor activities
-          </p>
-          <a class="cta" href="products.html">Shop now</a>
+        <div class="products">
+
+
         </div>
-      </section>
-      <section class="message-us">
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="message-us">
         <div class="message-us-container">
           <div class="box-1">
             <h1>Stay Connected</h1>
@@ -113,10 +113,12 @@
         </div>
       </section>
 
+      <!--social media-->
+
       <section class="social-media">
         <div class="SM-box1">
           <h3>Customer Service</h3>
-          <p>Contact Us</p>
+          <p>Contack Us</p>
           <p>Newsletter</p>
         </div>
         <div class="SM-box2">
@@ -126,9 +128,9 @@
         </div>
         <div class="SM-box3">
           <h3>Information</h3>
-          <a href="contact.html">Store Address</a>
-          <a href="contact.html">Store Hours</a>
-          <a href="contact.html">Payment options</a>
+          <p onclick="window.location.href='contact.html';">Store Address</p>
+          <p onclick="window.location.href='contact.html';">Store Hours</p>
+          <p onclick="window.location.href='contact.html';">Payment options</p>
         </div>
         <div class="SM-box4">
           <h3>Follow Us on Social Media</h3>
@@ -150,7 +152,9 @@
     <footer>
       <p>&copy; RAINY DAYS 2022</p>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/emailValidate.js"></script>
+    <script src="js/cart.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

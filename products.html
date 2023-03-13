@@ -49,25 +49,28 @@
         </div>
         <div class="nav-container-part2">
           <div class="nav-searchbox">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Search" />
+            <form>
+              <input type="search" placeholder="Search" />
+            </form>
           </div>
           <div class="nav-cart">
             <input type="checkbox" id="cart-checkbox" />
-            <label for="cart-checkbox" class="cart-icon">
+            <label for="cart-checkbox" class="cart-icon"><a href="cart.html">
               <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <span class="cartOrder">0</span>
+            </a>
+              
             </label>
-            <div class="content">
-              <label for="cart-checkbox" id="temp">x</label>
-              <p>Your cart is empty. Continue shopping</p>
-            </div>
+        
           </div>
         </div>
       </div>
     </header>
     <main class="product-page">
       <section class="top-product">
-        <h1><span class="gender">Men</span> / <a href="">Women</a></h1>
+        <h1>
+          <span class="gender">Men</span> / <span class="girl">Women</span>
+        </h1>
         <div class="winter-jacket"></div>
         <input type="checkbox" class="see-more-state" id="post-1" />
         <div class="categories-circle">
@@ -77,7 +80,7 @@
               alt="winter jacket"
               class="categories-images"
             />
-            <button>Winter</button>
+            <button class="winterButton">Winter</button>
           </div>
           <div>
             <img
@@ -85,7 +88,7 @@
               alt="rain jacket"
               class="categories-images"
             />
-            <button>Rain</button>
+            <button class="rainButton">Rain</button>
           </div>
           <div>
             <img
@@ -93,7 +96,7 @@
               alt="summer jacket"
               class="categories-images"
             />
-            <button>Summer</button>
+            <button class="summerButton">Summer</button>
           </div>
           <div>
             <img
@@ -101,7 +104,7 @@
               alt="autumn jacket"
               class="categories-images"
             />
-            <button>Autumn</button>
+            <button class="autumnButton">Autumn</button>
           </div>
           <div>
             <img
@@ -109,7 +112,7 @@
               alt="man Skiing"
               class="categories-images"
             />
-            <button>Skiing</button>
+            <button class="skiButton">Skiing</button>
           </div>
           <div>
             <img
@@ -117,7 +120,7 @@
               alt="man Canoeing"
               class="categories-images"
             />
-            <button>Canoeing</button>
+            <button class="canoeButton">Canoeing</button>
           </div>
           <div>
             <img
@@ -125,7 +128,7 @@
               alt="man hiking"
               class="categories-images"
             />
-            <button>Hiking</button>
+            <button class="hikingButton">Hiking</button>
           </div>
           <div>
             <img
@@ -133,246 +136,65 @@
               alt="man in camping"
               class="categories-images"
             />
-            <button>Camping</button>
+            <button class="campingButton">Camping</button>
           </div>
-          <div>
-            <img
-              src="images/jackets/new_arrivals.jpg"
-              alt="set of clothes"
-              class="categories-images"
-            />
-            <button>New Arrivals</button>
-          </div>
-          <div>
-            <img
-              src="images/jackets/sale.webp"
-              alt="cheap clothes"
-              class="categories-images"
-            />
-            <button>Sale</button>
-          </div>
-        </div>
+          
+  
       </section>
       <section class="breadcrumbs">
-        <h2>Home/Men/Winter</h2>
+        <h2>Home/<span class="crumbs">Men</span>/<span class="outdoor">Winter</span></h2>
       </section>
+
       <section class="main-product">
-        <div class="product1">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/jackets_8.jpg"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+        <div class="productImage">
+            <img src="images/add_to_cart_jackets/vintagegrey.png" alt="brown jacket" />
+            <h5>Vintage Grey Jacket</h5>
+            <p>500 NOK</p>
+            <a href="#" class="addCart cart1">add to cart</a>
         </div>
-        <div class="product3">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket2.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+            <img src="images/add_to_cart_jackets/redjacket.png" alt="brown jacket"/>
+            <h5>Red Jacket</h5>
+            <p>460 NOK</p>
+            <a href="#" class="addCart cart2">add to cart</a>          
         </div>
-        <div class="product4">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket3.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+            <img src="images/add_to_cart_jackets/blackjacket.png" alt="brown jacket"/>
+            <h5>Black Jacket</h5>
+            <p>500 NOK</p>
+            <a href="#" class="addCart cart3">add to cart</a>          
         </div>
-        <div class="product5">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket4.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+            <img src="images/add_to_cart_jackets/greyjacket.png" alt="brown jacket" />
+            <h5>Grey Jacket</h5>
+            <p>660 NOK</p>
+            <a href="#" class="addCart cart4">add to cart</a>          
         </div>
-        <div class="product6">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket5.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+            <img src="images/add_to_cart_jackets/scottblackjacket.png" alt="brown jacket" />
+            <h5>Scott black Jacket</h5>
+            <p>600 NOK</p>
+            <a href="#" class="addCart cart5">add to cart</a>          
         </div>
-        <div class="product7">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket6.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+            <img  src="images/add_to_cart_jackets/oldbrown.png" alt="brown jacket"/>
+            <h5>Old Brown Jacket</h5>
+            <p>360 NOK</p>
+            <a href="#" class="addCart cart6">add to cart</a>          
         </div>
-        <div class="product8">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket7.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
+
+        <div class="productImage">
+              <img src="images/add_to_cart_jackets/orangegreyjacket.png" alt="brown jacket"/>
+              <h5>Orange Grey Jacket</h5>
+              <p>680 NOK</p>
+              <a href="#" class="addCart cart7">add to cart</a>          
         </div>
-        <div class="product9">
-          <div class="add-to-cart">
-            <a href="jackets.html">
-              <img
-                src="images/add_to_cart_jackets/RainyDays_Jacket1.png"
-                alt="brown jacket"
-              />
-            </a>
-          </div>
-          <div class="selection">
-            <select name="sizes" class="sizes">
-              <option value="">Select size</option>
-              <option value="xtra small">xs</option>
-              <option value="Small">S</option>
-              <option value="Medium">M</option>
-              <option value="Large">L</option>
-              <option value="xtra Large">xL</option>
-            </select>
-            <button>add to cart</button>
-          </div>
-          <div class="product-text">
-            <a href="jackets.html">
-              <h3>Vintage Brown Jacket</h3>
-              <p>560 NOK</p>
-            </a>
-          </div>
-        </div>
+
       </section>
 
       <!--stay connected-->
@@ -386,12 +208,16 @@
             </p>
           </div>
           <div class="box-2">
-            <input type="email" placeholder="Email" />
-            <button>Submit</button>
-            <p>
-              By signing up you are agreeing marketing communication from us.
-              For more information please see our Privacy Policy
-            </p>
+            <form id="emailHome">
+              <input placeholder="email" id="email" />
+
+              <button class="cta">Submit</button>
+              <div class="form-error" id="emailError"></div>
+              <p>
+                By signing up you are agreeing marketing communication from us.
+                For more information please see our Privacy Policy
+              </p>
+            </form>
           </div>
         </div>
       </section>
@@ -400,23 +226,23 @@
 
       <section class="social-media">
         <div class="SM-box1">
-          <h3>Customer Service</h3>
+          <h5>Customer Service</h5>
           <p>Contack Us</p>
           <p>Newsletter</p>
         </div>
         <div class="SM-box2">
-          <h3>Online Shopping</h3>
+          <h5>Online Shopping</h5>
           <p>Shopping cart</p>
           <p>our product</p>
         </div>
         <div class="SM-box3">
-          <h3>Information</h3>
+          <h5>Information</h5>
           <p onclick="window.location.href='contact.html';">Store Address</p>
           <p onclick="window.location.href='contact.html';">Store Hours</p>
           <p onclick="window.location.href='contact.html';">Payment options</p>
         </div>
         <div class="SM-box4">
-          <h3>Follow Us on Social Media</h3>
+          <h5>Follow Us on Social Media</h5>
           <a href="facebook.com">
             <i class="fa-brands fa-facebook-f"></i>
           </a>
@@ -435,5 +261,8 @@
     <footer>
       <p>&copy; RAINY DAYS 2022</p>
     </footer>
+    <script src="js/emailValidate.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
