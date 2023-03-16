@@ -57,14 +57,12 @@
           </div>
           <div class="nav-cart">
             <input type="checkbox" id="cart-checkbox" />
-            <label for="cart-checkbox" class="cart-icon">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+            <label for="cart-checkbox" class="cart-icon"
+              ><a href="cart.html">
+                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                <span class="cartOrder">0</span>
+              </a>
             </label>
-            <div class="content">
-              <label for="cart-checkbox" id="temp">x</label>
-
-              <p>Your cart is empty. Continue shopping</p>
-            </div>
           </div>
         </div>
       </div>
@@ -152,5 +150,6 @@
     </footer>
     <script src="js/script.js"></script>
     <script src="js/emailValidate.js"></script>
+    <script src="js/cart.js"></script>
   </body>
 </html>

@@ -38,23 +38,20 @@
           </form>     
         </div>
         <div class="nav-cart">
-          <input type="checkbox" id="cart-checkbox">
-          <label for="cart-checkbox" class="cart-icon">
-          <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-          </label>
-          <div class="content">
-            <label for="cart-checkbox" id="temp">x</label>
-
-            <p>Your cart is empty. Continue shopping</p>
-
+            <input type="checkbox" id="cart-checkbox" />
+            <label for="cart-checkbox" class="cart-icon"><a href="cart.html">
+              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+              <span class="cartOrder">0</span>
+            </a>
+              
+            </label>
+        
           </div>
-
-        </div>
       </div>
     </div> 
   </header>
   <main class="about-page">
-    <div class="about-us-container-content">
+   
       <div class="about-rainydays">
         <div class="center-logo">
           <img src="Images/rainy_days_logo.jpg" alt="Rainy days logo" class="rd-logo">
@@ -64,13 +61,6 @@
           <p>The jackets are mid-range in price and emphasize durability and being suitable for a range of different weather types ensuring customers are comfortable whatever adventure they go on.</p>  
         </div>
       </div>
-        <div class="about-images">
-          <img src="images/jackets/photo-1481174228429-b2c3f5680a7a.avif" alt="red autumn jacket" class="jacket redjacket">
-          <img src="images/jackets/istockphoto-905996500-612x612.jpg" alt="rain jacket" class="jacket rainjacket">
-          <img src="images/jackets/orangejacket.webp" alt="winter jackets" class="jacket winterjackets">
-          <img src="images/jackets/photo-1521223890158-f9f7c3d5d504.avif" alt="leather jacket" class="jacket leatherjacket">
-        </div>
-    </div>
    
 
     <section class="message-us">
@@ -132,5 +122,6 @@
     <p>&copy; RAINY DAYS 2022</p>
   </footer>
   <script src="js/emailValidate.js"></script>
+<script src="js/cart.js"></script>
 </body>
 </html>
