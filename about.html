@@ -20,36 +20,46 @@
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 </head>
-  <header>
-    <div class="nav-container">
-      <div class="nav-container-part1">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="menu-icon"><i class="fas fa-bars"></i></label>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>    
-        </nav>
-      </div>  
-      <div class="nav-container-part2">
-        <div class="nav-searchbox">
+   <header>
+      <div class="nav-container">
+        <div class="nav-container-part1">
           <form>
-            <input type="search" placeholder="Search">
-          </form>     
-        </div>
-        <div class="nav-cart">
-            <input type="checkbox" id="cart-checkbox" />
-            <label for="cart-checkbox" class="cart-icon"><a href="cart.html">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-              <span class="cartOrder">0</span>
-            </a>
-              
+            <input type="checkbox" id="menu-checkbox" />
+            <label for="menu-checkbox" class="menu-icon"
+              ><i class="fas fa-bars"></i>
+              <span class="wave">icon</span>
             </label>
-        
+          </form>
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+          </nav>
+        </div>
+        <div class="nav-container-part2">
+          <div class="nav-searchbox">
+            <form>
+              <label for="search"
+                ><span class="wave">search</span>
+                <input id="search" type="search" placeholder="Search" />
+              </label>
+            </form>
           </div>
+          <div class="nav-cart">
+            <form>
+              <input type="checkbox" id="cart-checkbox" />
+              <label for="cart-checkbox" class="cart-icon">
+                <a href="cart.html">
+                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  <span class="cartOrder">0</span>
+                  <span class="wave">icon</span>
+                </a>
+              </label>
+            </form>
+          </div>
+        </div>
       </div>
-    </div> 
-  </header>
+    </header>
   <main class="about-page">
    
       <div class="about-rainydays">
@@ -86,7 +96,7 @@
       </div>
       
     </section>
-    <section class="social-media">
+   <section class="social-media">
         <div class="SM-box1">
           <h3>Customer Service</h3>
           <p>Contact Us</p>
@@ -95,15 +105,15 @@
         <div class="SM-box2">
           <h3>Online Shopping</h3>
           <p>Shopping cart</p>
-          <p>our product</p>
+          <p class="productBox">our product</p>
         </div>
         <div class="SM-box3">
           <h3>Information</h3>
-          <p onclick="window.location.href='contact.html';">Store Address</p>
-          <p onclick="window.location.href='contact.html';">Store Hours</p>
-          <p onclick="window.location.href='contact.html';">Payment options</p>
+          <p class="info">Store Address</p>
+          <p class="info">Store Hours</p>
+          <p class="info">Payment options</p>
         </div>
-       <div class="SM-box4">
+        <div class="SM-box4">
           <h3>Follow Us on Social Media</h3>
           <a href="facebook.com">
             <i class="fa-brands fa-facebook-f"></i>
@@ -122,7 +132,7 @@
             <span class="wave">pinterest</span>
           </a>
         </div>
-    </section>
+      </section>
   </main>
   <footer>
     <p>&copy; RAINY DAYS 2022</p>
