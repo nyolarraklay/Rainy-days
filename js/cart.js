@@ -30,7 +30,7 @@ let products = [
     inCart: 0,
   },
   {
-    name: "Old Brown Jacket",
+    name: "Old Brown ",
     tag: "oldbrown",
     price: 360,
     inCart: 0,
@@ -71,7 +71,7 @@ function cartNumbers(product, action) {
     document.querySelector(".cartOrder").textContent = productNumbers - 1;
   } else if (productNumbers) {
     localStorage.setItem("cartNumbers", productNumbers + 1);
-    document.querySelector(".cartOrder").textContent = productNumbers - 1;
+    document.querySelector(".cartOrder").textContent = productNumbers + 1;
   } else {
     localStorage.setItem("cartNumbers", 1);
     document.querySelector(".cartOrder").textContent = 1;
@@ -238,15 +238,3 @@ function manageQuantity() {
     });
   }
 }
-
-onLoadCartNumbers();
-
-displayCart();
-
-const buttonCart = document.querySelector(".checkOut button");
-
-function redirectPageIndex() {
-  location.href = "checkout.html";
-}
-
-buttonCart.addEventListener("click", redirectPageIndex);
