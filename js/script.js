@@ -10,7 +10,7 @@ h2.innerText = "Search what suits you";
 const divInput = document.createElement("div");
 divInput.classList.add("divInput");
 const label = document.createElement("label");
-label.for = "Search";
+label.for = "search";
 label.innerText = "Find branded jacket for sale or new arrivals";
 const input = document.createElement("input");
 input.className = "search";

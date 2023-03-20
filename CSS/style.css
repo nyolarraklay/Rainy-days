@@ -157,7 +157,7 @@ button {
   font-size: 30px;
 }
 .box-1 p {
-  font-size: 10px;
+  font-size: 12px;
 }
 .box-2 {
   display: flex;
@@ -165,7 +165,7 @@ button {
   align-items: center;
 }
 .box-2 p {
-  font-size: 10px;
+  font-size: 12px;
   margin-left: 2px;
 }
 
