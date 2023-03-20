@@ -399,6 +399,7 @@ select {
 .top-product {
   text-align: center;
   margin-bottom: 2px;
+  margin-top: 5vh;
 }
 .top-product h1 {
   cursor: pointer;
@@ -648,31 +649,91 @@ select {
   letter-spacing: 0px;
 }
 
+.wave {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* nav menu */
+li {
+  list-style: none;
+}
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.navLink {
+  transition: 0.7s;
+}
+
+.navLink:hover {
+  color: aquamarine;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
 @media (min-width: 150px) and (max-width: 700px) {
   /**navigation**/
-  nav,
-  #menu-checkbox {
-    display: none;
-  }
-  #menu-checkbox:checked ~ nav {
+
+  .hamburger {
     display: block;
   }
-  .nav-container {
-    position: relative;
+
+  .hamburger.active .bar:nth-child(1) {
+    opacity: 0;
   }
-  nav {
-    position: absolute;
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateY(2px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .navMenu {
+    position: fixed;
     background: rgb(10, 54, 65);
-    left: 0px;
+    left: -100%;
+    top: 30px;
+    gap: 0;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
   }
-  nav a {
-    display: block;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
+
+  .navItem {
+    margin: 16px 0;
   }
-  .menu-icon {
-    display: inline;
+
+  .navMenu.active {
+    left: 0;
   }
 
   .categories-container img {
@@ -1081,13 +1142,4 @@ select {
     margin-left: 0;
     margin-right: 0;
   }
-}
-
-.wave {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
 }
