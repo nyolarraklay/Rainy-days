@@ -40,4 +40,9 @@ function redirectPage() {
   location.href = "products.html";
 }
 
+const button = document.querySelector(".homeButton");
+function redirectToProduct() {
+  location.href = "products.html";
+}
+button.addEventListener("click", redirectToProduct);
 // validation
