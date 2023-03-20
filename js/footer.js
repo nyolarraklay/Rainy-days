@@ -27,3 +27,18 @@ function redirectToProduct() {
 }
 
 ourProduct.addEventListener("click", redirectToProduct);
+
+const icon = document.querySelector(".hamburger");
+const navigation = document.querySelector(".navMenu");
+
+icon.addEventListener("click", () => {
+  icon.classList.toggle("active");
+  navigation.classList.toggle("active");
+});
+
+document.querySelectorAll(".navLink").forEach((n) =>
+  n.addEventListener("click", () => {
+    icon.classList.remove("active");
+    navigation.classList.remove("active");
+  })
+);
