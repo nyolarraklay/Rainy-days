@@ -130,7 +130,7 @@ function displayCart() {
       productContainer.innerHTML += ` <div class="product">
       <ion-icon name="close-circle-outline"></ion-icon>
       <img src="images/add_to_cart_jackets/${item.tag}.png">
-      <span>${item.name}</span>
+      <span>${item.name} </span> 
       </div>
       <div class="price">${item.price}.00nok</div>
       <div class="quantity"><ion-icon class="decrease" name="arrow-back-circle-outline"></ion-icon><span>${

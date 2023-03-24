@@ -464,8 +464,9 @@ select {
 .addCart {
   position: absolute;
   width: 50%;
-  background-color: darkgray;
+  background-color: rgb(10, 54, 65);
   transition: all 0.3s ease-in-out;
+  color: white;
   opacity: 0;
   cursor: pointer;
   text-align: center;
@@ -1094,6 +1095,14 @@ li {
 }
 .social-media p {
   cursor: pointer;
+}
+
+.discount {
+  font-size: 10px;
+  color: red;
+}
+.grey {
+  font-size: 15px;
 }
 
 @media (min-width: 150px) and (max-width: 365px) {
