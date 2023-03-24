@@ -129,7 +129,7 @@ function displayCart() {
     Object.values(cartItems).map((item) => {
       productContainer.innerHTML += ` <div class="product">
       <ion-icon name="close-circle-outline"></ion-icon>
-      <img src="images/add_to_cart_jackets/${item.tag}.png">
+      <img src="images/add_to_cart_jackets/${item.tag}.png" alt="${item.tag}">
       <span>${item.name} </span> 
       </div>
       <div class="price">${item.price}.00nok</div>
