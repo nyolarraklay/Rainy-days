@@ -485,10 +485,10 @@ select {
 
 .contact-top {
   background-image: url("../Images/jackets/istockphoto-905996500-612x612.jpg");
-  padding: 115px 0px;
+  padding: 35vh 0px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 .contact-top div {
   display: flex;
@@ -516,10 +516,11 @@ select {
   font-size: 30px;
   text-decoration: none;
   background: rgba(0, 0, 0, 0.45);
+  color: white;
 }
 .contact-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1vh;
 }
 .address-map img {
@@ -1111,6 +1112,12 @@ li {
   font-size: 15px;
 }
 
+.contackBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 @media (min-width: 150px) and (max-width: 365px) {
   .product-header {
     display: none;
@@ -1121,6 +1128,10 @@ li {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+  }
+
+  .nav-searchbox {
+    display: none;
   }
   .product {
     width: 100%;
