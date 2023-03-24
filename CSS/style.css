@@ -46,7 +46,9 @@ nav a {
   padding: 5px;
   color: white;
 }
-
+.cartMain {
+  height: 95vh;
+}
 .nav-cart {
   margin-right: 15px;
 }
