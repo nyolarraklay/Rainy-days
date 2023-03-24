@@ -46,6 +46,10 @@ nav a {
   padding: 5px;
   color: white;
 }
+
+.nav-cart {
+  margin-right: 15px;
+}
 .cart-icon a {
   text-decoration: none;
   color: white;
